@@ -7,6 +7,49 @@ body {
     margin: 20px;
     padding: 0;
   }
+
+  div {
+    position: absolute;
+    padding: 1em;
+    border: 1px solid #000;
+  }
+
+  #nw, #ne, #sw, #se {
+    position: absolute;
+    padding: 1em;
+    border: 1px solid #000;
+    color: #fff; /* Text color */
+    text-align: center;
+    background: #2d2d2d;
+  }
+
+  #nw {
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 50%;
+  }
+
+  #ne {
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 50%;
+  }
+
+  #sw {
+    top: 50%;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+  }
+
+  #se {
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+  }
   
   .container {
     position: relative;
