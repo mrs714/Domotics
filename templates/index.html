@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
+<!-- templates/index.html -->
+
 <body>
-    <h1>Hello, Flask!</h1>
+    <header class="bg-dark text-white p-4">
+        <h1 class="text-center">Your Web App</h1>
+    </header>
+
+    <section class="container mt-4">
+        <p>This is a simple Flask web app with a dark theme.</p>
+    </section>
+
+    <!-- ... (more Bootstrap-styled content) ... -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
+
+</html>
+
+
 </html>

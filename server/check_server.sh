@@ -1,0 +1,1 @@
+# Check if server is running and restart it if it is not

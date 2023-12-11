@@ -1,0 +1,171 @@
+/* Define common styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d2d2d; /* Dark background color */
+    color: #E0E0E0; /* Light text color */
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  .container {
+    position: relative;
+    max-width: 45%;
+    margin: 0 auto;
+    margin-top: 1%;
+    padding: 4%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    background-color: #383838; /* Darker container background color */
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: 1.5s ease;
+  }
+  
+  @media (max-width: 1000px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+  
+  .container_fast_transition {
+    transition: 0s;
+  }
+  
+  .container_slow_transition {
+    transition: 2s ease;
+  }
+  
+  .codeContainer {
+    min-height: 50%;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #5d5d5d; /* Darker border color */
+    border-radius: 4px;
+    background-color: #5d5d5d; /* Darker button background color */
+    color: #ffffff; /* Light text color */
+  }
+  
+  /* Center titles */
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+    color: #00A8E8;
+  }
+  
+  h3 {
+    color: #3DC47E;
+  }
+  
+  h4 {
+    color: #FDB813;
+  }
+  
+  h5 {
+    color: #3DC47E;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  code {
+    background-color: #2E2E2E;
+    color: #FFA726;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  
+  /* CODE INPUT -----------------------------------------------------------------------------*/
+  /* Additional styles for the area where the code is inputed */
+  textarea {
+    display: block;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #5d5d5d; /* Darker border color */
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing */
+    background-color: #2d2d2d; /* Dark background color */
+    color: #ffffff; /* Light text color */
+  }
+  
+  /* Dark theme for form-control */
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff; /* Light text color */
+    background-color: #2d2d2d; /* Dark background color */
+    background-clip: padding-box;
+    border: 1px solid #5d5d5d; /* Darker border color */
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  /* Hover and focus effects */
+  .form-control:focus {
+    color: #ffffff; /* Light text color */
+    background-color: #2d2d2d; /* Dark background color */
+    border-color: #5d5d5d; /* Darker border color */
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(93, 93, 93, 0.25); /* Darker shadow color on focus */
+  }
+  
+  /* Disabled state */
+  .form-control:disabled {
+    background-color: #383838; /* Darker container background color */
+    opacity: 0.65;
+  }
+  
+  /* Dark theme for bootstrap table */
+  .table tbody td {
+    color: rgba(255, 255, 255, 0.747);
+  }
+  
+  /* Any element with this class will have an off white color, displaying info to the user*/
+  .info_label {
+    color: #f0f0f0c0; /* Off-white color */
+  }
+  
+  /* Used in the main menu to obtain information*/
+  .help_icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+   /* Override Bootstrap's default accordion styles */
+   .accordion {
+    background-color: #1f1f1f; /* Darker background color for accordion */
+  } 
+  
+  .card {
+    background-color: #292828; /* Dark background color for card */
+    border: none; /* Remove card border */
+  }
+  
+  .card-header {
+    background-color: #404040; /* Dark background color for card header */
+    border: none; /* Remove card header border */
+  }
+  
+  .btn-link {
+    color: #fff; /* Light text color for accordion button */
+  }
