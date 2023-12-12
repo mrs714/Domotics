@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask Web App</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
+    <title>Control panel</title>
+    <link rel="stylesheet" href="./static/css/style.css">
 
-<!-- templates/index.html -->
+    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+</head>
 
 <body>
     <div id="nw" class="content">
@@ -16,8 +16,7 @@
     </div>
 
     <div id="ne" class="content">
-        <h3>Top Right Quarter</h3>
-        <!-- Additional content for the top right quarter -->
+       
     </div>
 
     <div id="sw" class="content">
@@ -29,5 +28,7 @@
         <h3>Bottom Right Quarter</h3>
         <!-- Additional content for the bottom right quarter -->
     </div>
+
+    <script src="./static/js/map.js"></script>
 </body>
 </html>
