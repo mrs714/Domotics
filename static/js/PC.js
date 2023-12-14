@@ -6,7 +6,7 @@ function updatePingStatus() {
         .then(data => {
             // Update the status container with the received data
             const statusContainer = document.getElementById('status-container');
-            statusContainer.innerHTML = `Status: ${data.status}<br>IP: ${data.ip}`;
+            statusContainer.innerHTML = `Status: ${data.status}<br>IP: ${data.ip}, ${data}`;
         })
         .catch(error => console.error('Error fetching ping status:', error));
 }
