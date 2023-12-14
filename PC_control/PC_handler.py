@@ -1,6 +1,6 @@
 import subprocess
 import sys
-import jsonify
+from flask import jsonify
 
 sys.path.append('../')
 from constants import PC_IP
@@ -15,9 +15,10 @@ def send_ping_to_main_pc():
 
         if process.returncode == 0:
             print("Main PC is ON")
+            return jsonify({"status": "ON"}, {"ip": PC_IP})
         else:
             print("Main PC is OFF")
+            return jsonify({"status": "OFF"}, {"ip": PC_IP})
     except Exception as e:
         print(f"Error: {e}")
-
-    return jsonify({"status": "success" if process.returncode == 0 else "failed"}, {"ip": PC_IP})
+        return jsonify({"status": "failed"}, {"ip": PC_IP})
