@@ -5,11 +5,8 @@ from flask import jsonify
 sys.path.append('../')
 from constants import PC_IP
 
-# Reset path
-sys.path.pop()
-
 def send_ping_to_main_pc():
-    main_pc_script = "./ping.sh"  # Adjust the path accordingly
+    main_pc_script = "./PC_control/ping.sh"  # Adjust the path accordingly
 
     try:
         # Run the Bash script with the IP address as an argument
