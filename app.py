@@ -15,4 +15,4 @@ def ping():
     return send_ping_to_main_pc()
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
