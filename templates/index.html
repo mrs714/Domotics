@@ -6,22 +6,27 @@
     <title>Control panel</title>
     <link rel="stylesheet" href="./static/css/style.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+    <!-- Load the latest version of jQuery from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script> 
+
+    <!-- Load the library for RSTP camera feed -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/html5_rtsp_player@2.0.0/dist/html5_rtsp_player.min.js"></script> -->
+
 </head>
 
 <body>
     <div id="nw" class="content">
         <h3>Top Left Quarter</h3>
-        <!-- Additional content for the top left quarter -->
+        <!-- The feed from the camera will go here -->
+        <img id="cameraImage" src="" alt="Camera Feed">
     </div>
 
     <div id="ne" class="content">
-       
+       <!-- The map will go here -->
     </div>
 
     <div id="sw" class="content">
         <h3>Bottom Left Quarter</h3>
-        <!-- Additional content for the bottom left quarter -->
     </div>
 
     <div id="se" class="content">
@@ -29,6 +34,9 @@
         <!-- Additional content for the bottom right quarter -->
     </div>
 
-    <script src="./static/js/map.js"></script>
+    <!-- load the script for displaying the map -->
+    <script src="./static/js/map.js"></script> 
+    <!-- load the script for displaying the camera feed -->
+    <script src="./static/js/cameras.js"></script>
 </body>
 </html>
