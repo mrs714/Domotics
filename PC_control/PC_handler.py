@@ -3,7 +3,7 @@ import sys
 from flask import jsonify
 
 sys.path.append('../')
-from constants import PC_IP
+from constants import PC_IP, PC_MAC
 
 def send_ping_to_main_pc():
     main_pc_script = "./PC_control/ping.sh"  # Adjust the path accordingly
@@ -22,3 +22,21 @@ def send_ping_to_main_pc():
     except Exception as e:
         print(f"Error: {e}")
         return jsonify({"status": "failed", "ip": PC_IP})
+    
+def send_WOL_to_main_pc():
+    main_pc_script = "./PC_control/WOL.sh"  # Adjust the path accordingly
+
+    try:
+        # Run the Bash script with the IP address as an argument
+        process = subprocess.Popen([main_pc_script, PC_MAC], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        output, error = process.communicate()
+
+        if process.returncode == 0:
+            print("Wol sent to Main PC")
+            return jsonify({"status": "WOL sent"})
+        else:
+            print("Main PC is OFF")
+            return jsonify({"status": "Something went wrong"})
+    except Exception as e:
+        print(f"Error: {e}")
+        return jsonify({"status": "Something went very wrong"})
