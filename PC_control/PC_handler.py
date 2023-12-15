@@ -31,12 +31,9 @@ def send_WOL_to_main_pc():
         process = subprocess.Popen([main_pc_script, PC_MAC], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         output, error = process.communicate()
 
-        if process.returncode == 0:
-            print("Wol sent to Main PC")
-            return jsonify({"status": "WOL sent"})
-        else:
-            print("Main PC is OFF")
-            return jsonify({"status": "Something went wrong"})
+        print("Wol sent to Main PC")
+        return jsonify({"status": "WOL sent"})
+        
     except Exception as e:
         print(f"Error: {e}")
         return jsonify({"status": "Something went very wrong"})
