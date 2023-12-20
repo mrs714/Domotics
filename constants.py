@@ -18,10 +18,12 @@
 """
 
 
-PC_IP = ""
-PC_MAC = ""
+PC_IP = '192.168.1.139'
+PC_MAC = '04-D9-F5-F4-C1-C0'
 
-NAS_IP = ""
-NAS_PORT = ""
-NAS_USERNAME = ""
-NAS_PASSWORD = ""
+NAS_IP = '192.168.1.139'
+NAS_PORT = '5000'
+NAS_USERNAME = 'admin'
+NAS_PASSWORD = 'password'
+
+
