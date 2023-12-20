@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from PC_control.PC_handler import send_ping_to_main_pc, send_WOL_to_main_pc
 from NAS_control.NAS_handler import get_nas_info
+from Python_scripts.create_constants import create_constants
 
 app = Flask(__name__)
 
@@ -21,4 +22,5 @@ def nas():
     return get_nas_info()
 
 if __name__ == '__main__':
+    create_constants()
     app.run()
