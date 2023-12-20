@@ -1,5 +1,5 @@
 // List of ips for available cameras
-var cameras = ["rtsp://192.168.1.139/ch00_0"];
+var cameras = ["rtsp://192.168.1.137/ch00_0"];
 // Website to look up your camera's RTSP link: https://www.ispyconnect.com/camera/xiaomi (replace xiaomi with your camera's brand)
 
 /*
