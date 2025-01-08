@@ -1,7 +1,9 @@
 __pycache__/
 venv/
+env
 .vscode/
 *.pyc
 *.pyo
 *.pyd
 constants.txt
+constants.py
